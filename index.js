@@ -9,10 +9,10 @@ app.use(cors());
 app.use(express.json());
 
 const PORTvalue = process.env.PORT || 6300;
+ 
 
 
-
-app.use("/listdata", listRouter);
+app.use("/listdata", listRouter);  
 
 
 
@@ -31,7 +31,7 @@ app.listen(PORTvalue, async () => {
 });
 
 // function x(u,v){
-//     if(Math.random()>.5){
+//     if(Math.random()>.5){ 
 //         let [a,b,c] = fun1(v)
 //         u=u+2
 //     }else{
