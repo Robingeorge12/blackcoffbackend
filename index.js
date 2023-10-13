@@ -10,14 +10,14 @@ app.use(express.json());
 
 const PORTvalue = process.env.PORT || 6300;
  
-
+    
 
 app.use("/listdata", listRouter);  
 
 
 
 app.use("/", (req, res) => {
-    res.send("welcome home");
+    res.send("welcome home page");
   }); 
 
 
